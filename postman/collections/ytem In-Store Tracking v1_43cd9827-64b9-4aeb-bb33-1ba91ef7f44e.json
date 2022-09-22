@@ -1,0 +1,625 @@
+{
+	"info": {
+		"_postman_id": "18083c6b-508a-4621-8da3-fa8295702221",
+		"name": "ytem In-Store Tracking v1",
+		"description": "Capture shoppers' behavior by tracking their interactions with items when they are inside stores\n\nContact Support:\n Name: Contact the developer\n Email: support@developer.mojix.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "in-store-tracking/fitting-rooms",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Specific fitting room information.",
+							"id": "7d620516-9287-4cda-83bd-932c0a1abec6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Available value: v1",
+										"key": "Accept-version",
+										"value": "v1"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"in-store-tracking",
+										"fitting-rooms",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "890ad13d-62f2-4272-a6b5-e372b3b1b477",
+											"key": "id",
+											"value": "labore in veniam cillum",
+											"description": "(Required) Name or identifier of a fitting room"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "7c7c8b70-1ff0-41c5-b9e2-26f72644480a",
+									"name": "Fitting Room found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											},
+											{
+												"description": "Available value: v1",
+												"key": "Accept-version",
+												"value": "v1"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"in-store-tracking",
+												"fitting-rooms",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "labore in veniam cillum",
+													"description": "(Required) Name or identifier of a fitting room"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"expirationThreshold\": -10811446,\n  \"href\": \"aliquip\",\n  \"location\": \"Excepteur ea sunt\",\n  \"name\": \"nostrud e\",\n  \"position\": {\n    \"x\": -43400001.33118931,\n    \"y\": -4255681.916661039,\n    \"z\": -78558702.83109349\n  },\n  \"siteBizLocation\": \"ut mollit ut\",\n  \"siteCode\": \"culpa laboris\",\n  \"status\": \"do incididunt magna elit qui\"\n}"
+								},
+								{
+									"id": "db0ac7f3-6105-455a-8199-705bbde900f1",
+									"name": "Invalid Fitting Room identifier supplied",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											},
+											{
+												"description": "Available value: v1",
+												"key": "Accept-version",
+												"value": "v1"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"in-store-tracking",
+												"fitting-rooms",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "labore in veniam cillum",
+													"description": "(Required) Name or identifier of a fitting room"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"code\": \"velit Lorem\",\n  \"message\": \"consectetur ad in\"\n}"
+								},
+								{
+									"id": "687dcfd3-ba6c-4634-b75f-2081e8568354",
+									"name": "Fitting Room not found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											},
+											{
+												"description": "Available value: v1",
+												"key": "Accept-version",
+												"value": "v1"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"in-store-tracking",
+												"fitting-rooms",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "labore in veniam cillum",
+													"description": "(Required) Name or identifier of a fitting room"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"code\": \"velit Lorem\",\n  \"message\": \"consectetur ad in\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Items currently detected inside a specific fitting room.",
+							"id": "bd9bcae8-1cd7-4cef-a8f0-6a862d94babc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Available value: v1",
+										"key": "Accept-version",
+										"value": "v1"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms/:id/items",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"in-store-tracking",
+										"fitting-rooms",
+										":id",
+										"items"
+									],
+									"variable": [
+										{
+											"id": "bd163057-0bf5-4e08-8fa8-92e599a39c15",
+											"key": "id",
+											"value": "labore in veniam cillum",
+											"description": "(Required) Name or identifier of a fitting room"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "72911228-b823-48ed-b4eb-d018532a2879",
+									"name": "Fitting Room found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											},
+											{
+												"description": "Available value: v1",
+												"key": "Accept-version",
+												"value": "v1"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms/:id/items",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"in-store-tracking",
+												"fitting-rooms",
+												":id",
+												"items"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "labore in veniam cillum",
+													"description": "(Required) Name or identifier of a fitting room"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
+								},
+								{
+									"id": "e134833d-d6ba-4bfc-94a0-4d6bdb6701cc",
+									"name": "Invalid Fitting Room identifier supplied",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											},
+											{
+												"description": "Available value: v1",
+												"key": "Accept-version",
+												"value": "v1"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms/:id/items",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"in-store-tracking",
+												"fitting-rooms",
+												":id",
+												"items"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "labore in veniam cillum",
+													"description": "(Required) Name or identifier of a fitting room"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"code\": \"velit Lorem\",\n  \"message\": \"consectetur ad in\"\n}"
+								},
+								{
+									"id": "20b01db6-92f2-48f1-8f87-dc01f788326a",
+									"name": "Fitting Room not found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											},
+											{
+												"description": "Available value: v1",
+												"key": "Accept-version",
+												"value": "v1"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms/:id/items",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"in-store-tracking",
+												"fitting-rooms",
+												":id",
+												"items"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "labore in veniam cillum",
+													"description": "(Required) Name or identifier of a fitting room"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"code\": \"velit Lorem\",\n  \"message\": \"consectetur ad in\"\n}"
+								}
+							]
+						}
+					],
+					"id": "c54b6739-c1fd-44cd-b727-792aac087412"
+				},
+				{
+					"name": "List fitting rooms in a store.",
+					"id": "93497082-744e-4622-a2dd-2d7df12dbf30",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) Available value: v1",
+								"key": "Accept-version",
+								"value": "v1"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms?expand=irure qui&location=labore in veniam cillum",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"in-store-tracking",
+								"fitting-rooms"
+							],
+							"query": [
+								{
+									"key": "expand",
+									"value": "irure qui",
+									"description": "Additional fitting room metadata to include in response, it can be the connection status, bizlocation or position"
+								},
+								{
+									"key": "location",
+									"value": "labore in veniam cillum",
+									"description": "The name of a location or specific bizLocation urn of a premise, floor, area or zone"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "8388b629-190f-4d45-b159-2f9e858f34fe",
+							"name": "Fitting Rooms found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									},
+									{
+										"description": "(Required) Available value: v1",
+										"key": "Accept-version",
+										"value": "v1"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms?expand=irure qui&location=labore in veniam cillum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"in-store-tracking",
+										"fitting-rooms"
+									],
+									"query": [
+										{
+											"key": "expand",
+											"value": "irure qui"
+										},
+										{
+											"key": "location",
+											"value": "labore in veniam cillum"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"fittingRoomList\": [\n    {\n      \"expirationThreshold\": 46708635,\n      \"href\": \"mollit incididunt pariatur Ut\",\n      \"location\": \"in dolore Excepteur sint\",\n      \"name\": \"minim consequat aliqua\",\n      \"position\": {\n        \"x\": 85122616.66717485,\n        \"y\": -56888761.370156035,\n        \"z\": -4737958.708319351\n      },\n      \"siteBizLocation\": \"in non fugiat eu est\",\n      \"siteCode\": \"in dolore culpa velit\",\n      \"status\": \"eiusmod ut elit magna\"\n    },\n    {\n      \"expirationThreshold\": -18864605,\n      \"href\": \"cupidatat exercitation non\",\n      \"location\": \"Ut irure cupidatat minim\",\n      \"name\": \"aliqua\",\n      \"position\": {\n        \"x\": 81956187.26165015,\n        \"y\": -85899497.45207806,\n        \"z\": 90066874.44914636\n      },\n      \"siteBizLocation\": \"consectetur magna irure\",\n      \"siteCode\": \"commodo proident aliquip officia\",\n      \"status\": \"sint\"\n    }\n  ],\n  \"location\": \"ut minim Excepteur aute\"\n}"
+						},
+						{
+							"id": "ec211d43-81aa-4d9a-bbb2-4d966f288690",
+							"name": "Invalid input",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									},
+									{
+										"description": "(Required) Available value: v1",
+										"key": "Accept-version",
+										"value": "v1"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms?expand=irure qui&location=labore in veniam cillum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"in-store-tracking",
+										"fitting-rooms"
+									],
+									"query": [
+										{
+											"key": "expand",
+											"value": "irure qui"
+										},
+										{
+											"key": "location",
+											"value": "labore in veniam cillum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"code\": \"velit Lorem\",\n  \"message\": \"consectetur ad in\"\n}"
+						},
+						{
+							"id": "642af666-5287-4f3a-8177-e11108ca4970",
+							"name": "Authentication error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									},
+									{
+										"description": "(Required) Available value: v1",
+										"key": "Accept-version",
+										"value": "v1"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/in-store-tracking/fitting-rooms?expand=irure qui&location=labore in veniam cillum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"in-store-tracking",
+										"fitting-rooms"
+									],
+									"query": [
+										{
+											"key": "expand",
+											"value": "irure qui"
+										},
+										{
+											"key": "location",
+											"value": "labore in veniam cillum"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"code\": \"velit Lorem\",\n  \"message\": \"consectetur ad in\"\n}"
+						}
+					]
+				}
+			],
+			"id": "6dfb34af-2a88-426c-9266-206518c5feae"
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "b73598d6-8a23-4e66-a447-7f48dda8e268",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
