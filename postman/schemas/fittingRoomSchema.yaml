@@ -1,9 +1,9 @@
 ---
 openapi: 3.0.3
 info:
-  title: ytem In-Store Tracking postman integration
+  title: ytem In-Store Tracking 
   description: Capture shoppers' behavior by tracking their interactions with items
-    when they are inside stores
+    when they are inside stores. (This is an example of Postman-github) integration.
   contact:
     name: Contact the developer
     email: support@developer.mojix.com
